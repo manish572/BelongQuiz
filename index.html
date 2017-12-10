@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Where do you belong?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-wrapper">
+            <h1>Where do you belong?</h1>
+            <h2>Dont be lost no more, we gotchu. Play this game and see where you belong!</h2>
+            <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+            <a href="#questions" class="animated pulse infinite">Let's find out!</a>
+        </div>
+
+    </header>
+
+    <main>
+        <section id="questions" class="questions">
+            <div class="questions-wrapper">
+                <form>
+                    <div class="question">
+                        <h3>What is your age?</h2>
+                        <div class="questionChoices">
+                            <input type="radio" id="eighteen" name="age" value="eighteen"><label for="eighteen" class="cool"> > than 18</label>
+                            <input type="radio" id="twentyFour" name="age" value="twentyFour"><label for="twentyFour">19 to 24</label>
+                            <input type="radio" id="thirtyFour" name="age" value="thirtyFour"><label for="thirtyFour">25 to 34</label>
+                            <input type="radio" id="fifty" name="age" value="fifty"><label for="fifty">35 to 50</label>
+                            <input type="radio" id="old" name="age" value="old"><label for="old">Too old</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <h3>What is your favourite weather?</h2>
+                        <div class="questionChoices">
+                            <input type="radio" id="sun" name="weather" value="sun"><label for="sun">Sun</label>
+                            <input type="radio" id="snow" name="weather" value="snow"><label for="snow">Snow</label>
+                            <input type="radio" id="gloom" name="weather" value="gloom"><label for="gloom">Gloom</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <h3>What kind of a person are you?</h2>
+                        <div class="questionChoices">      
+                            <input type="radio" id="party" name="personality" value="party"><label for="party">Partaaay! </label>
+                            <input type="radio" id="outgoing" name="personality" value="outgoing"><label for="outgoing">Outgoing</label>
+                            <input type="radio" id="chills" name="personality" value="chills"><label for="chills">I'm chills</label>
+                            <input type="radio" id="quiet" name="personality"  value="quiet"><label for="quiet">Quiet</label>
+                            <input type="radio" id="alone" name="personality" value="alone"><label for="alone">Leave me alone!!</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <h3>What do you like more?</h2>
+                        <div class="questionChoices">
+                            <input type="radio" id="hills" name="area" value="hills">
+                            <label for="hills">Hills</label>
+                            <input type="radio" id="urban" name="area" value="urban">
+                            <label for="urban">Urban</label>
+                            <input type="radio" id="beach" name="area" value="beach">
+                            <label for="beach">Beach Please</label>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" class="submitButton">   
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="result" id="result">
+            <div class="result-wrapper">
+                <h3>You belong in:</h3>
+                <div class="resultCity"></div>
+                <div class="resultImage"></div>
+                <div class="resultText">
+                    <h4></h4>
+                </div>
+                <button class="resetQuiz">
+                    <h5>Let's Play Again!</h5>
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/e64e16a38d.js"></script>
+    <script src = "smoothScroll.js"> </script>
+    <script src="scripts.js"></script>
+</body>
+</html>
